@@ -70,14 +70,18 @@
     </script>
     
     <script>
-        function get() {
+        function get()
+         {
             let cyclerItems = document.getElementsByClassName("cycler")
+            
             if(cyclerItems.length > 0) {
+                
                 cyclerItems[cyclerItems.length-1].remove()
             }
         }
 
-        function spin() {
+        function spin()
+         {
             let cyclerItems = document.getElementsByClassName("cycler")
             if(cyclerItems.length > 1) {
                 removedItem = cyclerItems[cyclerItems.length-1]
@@ -87,7 +91,8 @@
             }
         }
         
-        function swap() {
+        function swap()
+         {
                 let cyclerItems = document.getElementsByClassName("cycler")
                 let container = document.getElementById("target")
                 let a = Math.floor(Math.random() * cyclerItems.length)
@@ -100,4 +105,15 @@
                     secondInnerText.innerHTML = temp
                 }
             }
-    </script>
+        </script>
+            <div class="container">
+
+<ul class="pager">
+    <li class="previous">
+        <a href="reaction.html">reaction Timer</a>
+
+    </li>
+</ul>
+</div>
+
+    
